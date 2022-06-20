@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CONTACT</title>
+        <link rel="shortcut icon" href="../assets/abuelita icon.png" />
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+    <body class="bodyPages">
+        <header class="header">
+          <h1 class="header__titulo">LocroMatic</h1>
+          <nav>
+              <ul class="header__listaDeNavegacion">
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="./product.html">Our product</a></li>
+                  <li><a href="./gallery.html">Gallery</a></li>
+                  <li><a href="./aboutus.html">About us</a></li>
+              </ul>
+          </nav>
+        </header>
+        <main class="mainContentContact">
+            <div class="mainContentContact__contenido1">
+                <h3>Location</h3> 
+                <aside class="mainContentContact__aside">
+                    <p>
+                        You can find us from Monday to Saturday in Central Park just in front of Columbia Circle from the morning to noon!
+                        Our phone contact number is 3834316844. Call us or leave a message!
+                    </p>
+                </aside>
+            </div>
+            <div class="mainContentContact__contenido2">    
+                <form>
+                    <label for="name">
+                        Your name:
+                    </label>
+                    <input type="text" id="name" />               
+                    <hr />
+                    <br />
+                    <label for="email">
+                        Your email:
+                    </label>
+                    <input type="text" id="email">
+                    <hr />
+                    <br />
+                    <label for="phone">
+                        Phone number:
+                    </label>
+                    <input type="text" id="phone" />
+                    <hr />
+                    <br />
+                    <span>Where are you from?</span>
+                    <br />
+                    <select>
+                        <option selected="selected">Select your location</option>
+                        <option>Brooklyn</option>
+                        <option>Bronx</option>
+                        <option>Long Island</option>
+                        <option>Manhattan</option>
+                        <option>Queens</option>
+                        <option>Staten Island</option>
+                    </select>
+                    <hr />
+                    <label>
+                        Have you ever tried LOCRO before?
+                    </label>
+                    <br />
+                    <br />
+                    <span>Yes</span>
+                    <input type="radio" name="option" />
+                    <span>No</span>
+                    <input type="radio" name="option">
+                    <hr />
+                    <label>
+                        Do you know where LOCRO is from?
+                    </label>
+                    <br />
+                    <br />
+                    <span>Brazil</span>
+                    <input type="radio" name="option2">
+                    <span>Argentina</span>
+                    <input type="radio" name="option2">
+                    <span>Colombia</span>
+                    <input type="radio" name="option2">
+                    <span>Italy</span>
+                    <input type="radio" name="option2">
+                    <hr />
+                    <label>
+                        Do you want to receive more information about it?
+                    </label>
+                    <br />
+                    <br />
+                    <span>Yes</span>
+                    <input type="checkbox" checked="checked" />
+                    <span>I accept the terms and conditions</span>
+                    <input type="checkbox" />
+                    <hr />
+                    <label for="comment">
+                        Any extra comment
+                    </label>
+                    <br />
+                    <br />
+                    <textarea id="comment" rows="10" cols="50"></textarea>
+                    <br />
+                    <input type="submit" value="Send"/>
+                    <input type="reset" value="Reset"/>
+                </form>
+                <h3>Form</h3>
+            </div>
+        </main>
+        <footer class="contactFooter">
+            Every Monday to Saturday from 8 a.m to 7 p.m Central Park corner Columbia Circle
+        </footer>     
+    </body>
+</html>
