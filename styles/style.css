@@ -324,6 +324,7 @@ ul li a:hover {
     align-items: flex-start;
     padding: 1rem;
     margin-top: 5.3rem;
+    background-image: linear-gradient(to top, #e85d04, #f48c06, #faa307, #ffba08);
     box-shadow: -14px 1px 65px 13px rgba(0,0,0,0.34);
     -webkit-box-shadow: -14px 1px 65px 13px rgba(0,0,0,0.34);
     -moz-box-shadow: -14px 1px 65px 13px rgba(0,0,0,0.34);
@@ -476,6 +477,7 @@ ul li a:hover {
 .varieties h4:hover {
     background-color: #252422;
     color: #ffa500;
+    transform: skew(25deg, 172deg);
 }
 
 .varieties ol,
@@ -737,6 +739,18 @@ ul {
     display: flex;
     justify-content: center;
     padding: 3rem;
+    animation-name: animacion1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 10s;
+}
+
+@keyframes animacion1 {
+    0%{ transform: translate(20deg, 50deg);}
+    50%{ transform: rotate(25deg);}
+    75%{ transform: skew(15deg, 15deg);}
+    100%{}
 }
 
 .aboutUsFooter {
