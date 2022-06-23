@@ -28,16 +28,16 @@ body::-webkit-scrollbar-thumb {
 
 /* Grid de todo el header */
 
-.header {
-    display: grid;
-    grid-template-areas: 
-    "header__titulo header__listaDeNavegacion"
-    "header__titulo header__listaDeNavegacion";
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-}
+    .header {
+        display: flex;
+        grid-template-areas: 
+        "header__titulo header__listaDeNavegacion"
+        "header__titulo header__listaDeNavegacion";
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
 
 /* Header en comun */
 
@@ -82,74 +82,15 @@ ul li a:hover {
 
 /* Body de index */
 
-.indexContainer {
-    display: grid;
-    grid-template-areas: 
-    "indexImg  indexArticle indexPubli"
-    "footerIndex footerIndex indexPubli";
-    height: 100%;
-    width: 100%;
-    column-gap: 2rem;
-    padding: 1rem;
+.container-fluid {
+    margin: 2rem;
 }
 
-/* Comienzo media query para index */
-
-@media screen and (max-width: 648px)  {
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .header__titulo {
-        width: 100%;
-        margin: 0;
-    }
-
-    .header ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .indexContainer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        font-size: 0.8em;
-        position: relative;
-    }
-
-    .indexArticle iframe {
-        width: 100%;
-    }
-
-    .indexImg {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        overflow: hidden;
-    }
-
-    .indexPubli {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .footerIndex {
-        width: 100%;
-        text-align: center;
-    }
+.mainIndex {
+    display: flex;
+    padding: 3rem;
+    padding-ight: 1rem;
 }
-
-/* Fin de media querie */
-
 
 .indexArticle {
     padding-top: 1rem;
@@ -165,11 +106,6 @@ ul li a:hover {
     text-align: center;
     line-height: 1.6;
     text-shadow: .5px .5px 1.2px black;
-    grid-area: indexArticle;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     box-shadow: -14px 10px 38px -1px rgba(0,0,0,0.62);
     -webkit-box-shadow: -14px 10px 38px -1px rgba(0,0,0,0.62);
     -moz-box-shadow: -14px 10px 38px -1px rgba(0,0,0,0.62);
@@ -183,12 +119,13 @@ ul li a:hover {
 }
 
 .indexArticle iframe {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
+    padding: 1rem;
+    width: 100%;
 }
 
 .indexImg {
-    grid-area: indexImg;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,24 +133,24 @@ ul li a:hover {
 }
 
 .indexPubli {
-    grid-area: indexPubli;
     width: 100%;
-    order: outset #ffa500;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     font-style: italic;
     font-weight: bolder;
-    padding: 0.5rem;
 }
 
 .footerIndex {
-    grid-area: footerIndex;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
     font-style: oblique;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 /* Body de pagina Contact */
@@ -408,12 +345,6 @@ ul li a:hover {
         display: flex;
         justify-content: center;
     }
-
-    /* .mainSectionProduct2__table {
-        display: flex;
-        justify-content: center;
-        overflow: none;
-    } */
 
     .productPubli {
         width: 100%;
@@ -651,77 +582,23 @@ ul {
     font-style: italic;
 }
 
-/* Body de pagina Aboutus */
+/* Body de pagina About Us */
 
-.mainSectionAboutus {
+.mainAboutUs {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 65vw;
-    margin-left: 18vw;
-    margin-top: 8vw;
+    padding: 3rem;
 }
-
-/* Inicio media querie para pagina Aboutus */
-
-@media screen and (max-width: 648px)  {
-    .mainSectionAboutus {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        margin-top: 2rem;
-        width: 100%;
-        height: 100%;
-    }
-
-    .mainSectionAboutus .mainSectionAboutus__contenido {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        font-size: 1.8rem;
-        line-height: 1.5;
-        letter-spacing: 0.3vw;
-    }
-
-    .mainSectionAboutus__img {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        margin-top: 2rem;
-    }
-
-    .aboutUsFooter {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        font-style: italic;
-        font-size: 0.8rem;
-        margin-top: 5rem;
-        padding: 1rem;
-    }
-}
-
-/* Fin de media querie */
 
 .mainSectionAboutus__contenido {
     color: #252422;
     background-color: #ffa500;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    position: relative;
-    width: 80vw;
-    margin-top: 0.5vw;
-    font-size: 1.6vw;
+    font-size: 2rem;
     line-height: 1.5;
     letter-spacing: 0.1vw;
     border: outset #ffa500;
-    padding-bottom: 1vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    width: 100%;
     box-shadow: 12px 10px 20px 0px rgba(0,0,0,0.74);
     -webkit-box-shadow: 12px 10px 20px 0px rgba(0,0,0,0.74);
     -moz-box-shadow: 12px 10px 20px 0px rgba(0,0,0,0.74);
@@ -731,33 +608,25 @@ ul {
     background-color: #252422;
 }
 
-.mainSectionAboutus__contenido h3 {
+.mainSectionAboutus__contenido h2 {
     text-align: center;
     padding-top: 10px;
 }
 
-.mainSectionAboutus .mainSectionAboutus__img {
+ .mainSectionAboutus__img {
+    padding: 1rem;
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 3rem;
-    animation-name: animacion1;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 2s;
-}
-
-@keyframes animacion1 {
-    0%{ transform: translate(20deg, 50deg);}
-    50%{ transform: rotate(25deg);}
-    75%{ transform: skew(15deg, 15deg);}
-    100%{}
 }
 
 .aboutUsFooter {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    text-align: center;
     margin-bottom: 1rem;
     font-style: oblique;
+    font-size: 1rem;
+    width: 100%;
 }

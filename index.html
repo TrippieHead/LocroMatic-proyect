@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Homepage</title>
         <link rel="shortcut icon" href="./assets/abuelita icon.png" />
         <link rel="stylesheet" type="text/css" href="./styles/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">  
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <title>Homepage</title>
     </head>
     <body>
         <header class="header">
@@ -25,27 +26,30 @@
                 </ul>
             </nav>
         </header>
-        <div class="indexContainer">
-            <article class="indexArticle">
-                <p>
-                    <strong>WINTER IS COMING! Come and try the new fresh New York flavor, Grandma's Locro!</strong>
-                    If you are looking for something new, delicious, comforting and hot, then you should go to Central Park corner Columbia Circle and give this new recipe brought directly from abroad, the Locro, a try. This is an excellent plate made by my own grandmother with her ancient family recipe... Don't stay without trying it! By the way, here you have an excellent track to listen dude, go for it.
-                </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/pExT-SJUkxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </article>
-            <div class="indexImg animate__animated animate__backInLeft">
-                <img src="./assets/abuela cocinera1-Recuperado copia.png" alt="abuela cocinera con gorro de chef" />
+        <div class="container-fluid">
+            <div class="row mainIndex">
+                <article class="indexArticle col-sm-12 col-md-12 col-lg-5">
+                    <p>
+                        <strong>WINTER IS COMING! Come and try the new fresh New York flavor, Grandma's Locro!</strong>
+                        If you are looking for something new, delicious, comforting and hot, then you should go to Central Park corner Columbia Circle and give this new recipe brought directly from abroad, the Locro, a try. This is an excellent plate made by my own grandmother with her ancient family recipe... Don't stay without trying it! By the way, here you have an excellent track to listen dude, go for it.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pExT-SJUkxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+                <div class="indexImg animate__animated animate__backInRight col-sm-12 col-md col-lg">
+                    <img src="./assets/abuela cocinera1-Recuperado copia.png" alt="abuela cocinera con gorro de chef" />
+                </div>
+                <div class="indexPubli col-sm-12 col-md-2 col-lg-1">
+                    <aside>Publicidad</aside>
+                    <aside>Publicidad</aside>
+                    <aside>Publicidad</aside>
+                    <aside>Publicidad</aside>
+                    <aside>Publicidad</aside>
+                </div>    
             </div>
-            <div class="indexPubli">
-                <aside>Publicidad</aside>
-                <aside>Publicidad</aside>
-                <aside>Publicidad</aside>
-                <aside>Publicidad</aside>
-                <aside>Publicidad</aside>
-            </div>
-            <footer class="footerIndex">
-                Every Monday to Saturday from 8 a.m to 7 p.m Central Park corner Columbia Circle
-            </footer>   
-        </div>         
+        </div>
+        <footer class="footerIndex">
+            Every Monday to Saturday from 8 a.m to 7 p.m Central Park corner Columbia Circle
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>         
     </body>
 </html>
