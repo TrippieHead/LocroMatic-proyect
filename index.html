@@ -11,32 +11,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">  
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
         <title>Homepage</title>
     </head>
     <body>
-        <header class="header">
-            <h1 class="header__titulo">LocroMatic</h1>
-            <nav>
-                <ul class="header__listaDeNavegacion">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
-                    <li><a href="./pages/product.html">Our product</a></li>
-                    <li><a href="./pages/gallery.html">Gallery</a></li>
-                    <li><a href="./pages/aboutus.html">About us</a></li>
-                </ul>
-            </nav>
+        <header class="header container-fluid">
+            <div class="row d-flex justify-content-around align-items-start">
+                <img src="./assets/LOGO.png" alt="logo de la marca" class="col-auto logo animate__animated animate__rubberBand">
+                <nav class="col nav mt-2">
+                    <ul class="header__listaDeNavegacion">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                        <li><a href="./pages/product.html">Our product</a></li>
+                        <li><a href="./pages/gallery.html">Gallery</a></li>
+                        <li><a href="./pages/aboutus.html">About us</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <div class="container-fluid">
             <div class="row mainIndex">
-                <article class="indexArticle col-sm-12 col-md-12 col-lg">
+                <article class="indexArticle col-sm-12 col-md-12 col-lg-auto">
                     <p>
                         <strong>WINTER IS COMING! Come and try the new fresh New York flavor, Grandma's Locro!</strong>
-                        If you are looking for something new, delicious, comforting and hot, then you should go to Central Park corner Columbia Circle and give this new recipe brought directly from abroad, the Locro, a try. This is an excellent plate made by my own grandmother with her ancient family recipe... Don't stay without trying it! By the way, here you have an excellent track to listen dude, go for it.
+                        If you are looking for something new, delicious, comforting and hot, then you should go to Central Park corner Columbia Circle and give this plate brought directly from abroad, the Locro, a try. This is an excellent meal made by my own grandmother with her ancient family recipe... Don't stay without trying it! By the way, here you have an excellent track to listen dude, go for it.
                     </p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/pExT-SJUkxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </article>
-                <div class="indexImg animate__animated animate__backInRight col-sm-12 col-md col-lg">
-                    <img src="./assets/abuela cocinera1-Recuperado copia.png" alt="abuela cocinera con gorro de chef" />
+                <div class="indexImg col-sm-12 col-md col-lg">
+                    <img src="./assets/abuela cocinera1-Recuperado copia.png" alt="abuela cocinera con gorro de chef" class="cocinera" />
                 </div>
                 <div class="indexPubli col-sm-12 col-md-2 col-lg-1">
                     <aside>Publicidad</aside>
@@ -47,8 +50,10 @@
                 </div>    
             </div>
         </div>
-        <footer class="footerIndex">
-            Every Monday to Saturday from 8 a.m to 7 p.m Central Park corner Columbia Circle
+        <footer class="footer">
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.google.com.ar/maps/place/Columbus+Cir,+New+York,+NY,+EE.+UU./@40.767848,-73.9837106,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258f63c9804b5:0xacca5e3d4112d7eb!8m2!3d40.767848!4d-73.9815219" target="_blank"><i class="bi bi-geo-alt-fill"></i></a>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>         
     </body>
