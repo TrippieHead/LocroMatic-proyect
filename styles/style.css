@@ -358,6 +358,7 @@ ul li a:hover {
     justify-content: center;
     letter-spacing: 5px;
     width: 100%;
+    text-shadow: 0.5px 0.5px 1px black;
 }
 
 .mainSectionProduct .varieties {
@@ -438,6 +439,7 @@ ul {
     letter-spacing: 5px;
     margin-right: 3rem;
     margin-top: 2rem;
+    text-shadow: 0.5px 0.5px 1px black;
 }
 
 .mainSectionProduct2__table {
@@ -468,6 +470,7 @@ ul {
     justify-content: center;
     margin-top: 3rem;
     margin-bottom: 4rem;
+    text-shadow: 0.5px 0.5px 1px black;
 }
 
 /* Body de pagina About Us */
@@ -495,6 +498,7 @@ ul {
     letter-spacing: 0.1vw;
     border: outset #ffa500;
     width: 100%;
+    transition: 0.7s;
     box-shadow: 12px 10px 20px 0px rgba(0,0,0,0.74);
     -webkit-box-shadow: 12px 10px 20px 0px rgba(0,0,0,0.74);
     -moz-box-shadow: 12px 10px 20px 0px rgba(0,0,0,0.74);
