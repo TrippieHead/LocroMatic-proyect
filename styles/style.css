@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url("https://img.freepik.com/foto-gratis/hojas-papel-color-naranja_23-2148320424.jpg?w=1060");
-    background-color: #D6B718;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 .bodyPages {
     background-image: url(../assets/pagesbackground.png);
 }
@@ -26,119 +18,53 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
 }
 
-/* Header en comun */
+/* Header */
 
 .header {
-    border-bottom: ridge #f48c06;
+    border-bottom: ridge #ffa500;
     background-image: url(../assets/corn.png), linear-gradient(to bottom, #e85d04, #f48c06, #faa307, #ffba08);
     background-size: contain;
-}
-
-@media screen and (min-width: 992px)  {
-    .header img {
-        margin-left: 5rem;
-    }
-}
-
-.nav {
+  }
+  .header .nav {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-}
-
-.header__listaDeNavegacion {
+  }
+  .nav .header__listaDeNavegacion {
     list-style-type: none;
     width: 40rem;
     padding: 1rem;
     display: flex;
     justify-content: space-around;
-}
-
- ul li a {
+    flex-wrap: wrap;
+  }
+  .header__listaDeNavegacion li a {
     text-decoration: none;
     color: black;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     font-size: 1.2em;
     transition: 0.6s;
     width: 100%;
     color: #000;
-}
-
-ul li a:hover {
+    font-style: oblique;
+  }
+  .header__listaDeNavegacion li a:hover {
     background-color: #252422;
     color: #ffa500;
-}
-
-/* Body de index */
-
-.mainIndex {
-    display: flex;
-    padding: 3rem;
-}
-
-.indexArticle {
-    padding-top: 2rem;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    margin-bottom: 5rem;
-    width: 100%;
-    border: outset #ffa500;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2em;
-    letter-spacing: 1.5px;
-    text-align: center;
-    line-height: 1.6;
-    text-shadow: .5px .5px 1.2px black;
-    box-shadow: -14px 10px 38px -1px rgba(0,0,0,0.62);
-    -webkit-box-shadow: -14px 10px 38px -1px rgba(0,0,0,0.62);
-    -moz-box-shadow: -14px 10px 38px -1px rgba(0,0,0,0.62);
-}
-
-.indexArticle:hover {
-    background-color: #252422;
-    color: #ffa500;
-    transition: 1s;
-    text-shadow: none;
-}
-
-.indexArticle iframe {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    width: 80%;
-}
-
-.indexImg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.cocinera {
-    animation-name: cocinera;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-direction: alternate;
-}
-
-@keyframes cocinera {
-    0% {transform: rotate(25deg);}
-    100% {transform: rotate(-20deg);}
-} 
-
-.indexPubli {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-style: italic;
-    font-weight: bolder;
-    font-family: 'Roboto Condensed', sans-serif;
-}
+  }
+  
+  @media screen and (min-width: 992px) {
+    .header img {
+      margin-left: 5rem;
+    }
+  }
+  @media screen and (max-width: 648px) {
+    .header__listaDeNavegacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 2;
+    }
+  }
 
 /* Body de pagina Contact */
 

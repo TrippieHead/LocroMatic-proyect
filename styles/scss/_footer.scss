@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-top: ridge $naranjita;
+    background-image: linear-gradient(to bottom, #000000, #141414, #1e1f1f, #2a2c2e, #3a3c3a);
+    color: $naranjita;
+
+    .bi-whatsapp {
+        font-size: 25px;
+        color: #f48c06;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .bi-instagram {
+        font-size: 25px;
+        color: $naranjita;
+    }
+
+    .bi-geo-alt-fill {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: $naranjita;
+    }
+}
