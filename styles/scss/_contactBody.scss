@@ -1,0 +1,123 @@
+.mainContentContact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .mainContentContact__contenido1 {
+        
+        h3 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            border: double #000;
+            position: relative;
+            top: 4rem;
+            letter-spacing: 3.5px;
+            background-color: #252422;
+            color: $naranjita;
+        }
+
+        .mainContentContact__aside {
+            width: 100%;
+
+            p {
+                width: 35rem;
+                border: inset $naranjita;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 2.5em;
+                text-align: center;
+                line-height: 1.4;
+                letter-spacing: 2.2px;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 1rem;
+                margin-top: 5.3rem;
+                background-image: linear-gradient(to right, #e85d04, #f48c06, #faa307, #ffba08);
+                box-shadow: -14px 1px 65px 13px rgba(0,0,0,0.34);
+                -webkit-box-shadow: -14px 1px 65px 13px rgba(0,0,0,0.34);
+                -moz-box-shadow: -14px 1px 65px 13px rgba(0,0,0,0.34);
+            } 
+
+            .ifr {
+                width: 100%;
+            }
+        }
+    }
+
+    .mainContentContact__contenido2 {
+
+        form {
+            margin-top: 6rem;
+            border: ridge $naranjita;
+            padding: 15px;
+            line-height: 1.2;
+            font-weight: bolder;
+            font-style: oblique;
+            box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+
+        }
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            border: double black;
+            position: relative;
+            top: 1.5rem;
+            letter-spacing: 5px;
+            background-color: #252422;
+            color: $naranjita;
+        }
+    }
+}
+
+// Media querie de pagina contact
+
+@media screen and (max-width: 648px)  {
+    .mainContentContact {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .mainContentContact__contenido1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .mainContentContact__aside {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .mainContentContact__aside p {
+        width: 100%;
+    }
+
+    .mainContentContact__aside .ifr {
+        width: 100%;
+    }
+
+    .mainContentContact__contenido2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .mainContentContact__contenido2 form {
+        width: 100%;
+    }
+
+    .mainContentContact__contenido2 form textarea {
+        width: 100%;
+    }
+}

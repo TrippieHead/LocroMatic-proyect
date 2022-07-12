@@ -5,3 +5,18 @@ body {
     background-size: cover;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+.bodyPages {
+    background-image: url(../assets/pagesbackground.png);
+    background-size: cover;
+}
+
+body::-webkit-scrollbar {
+    width:7px;
+    background-color: rgb(26, 26, 26);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #D6B718;
+    border-radius: 5px;
+}

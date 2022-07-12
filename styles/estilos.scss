@@ -4,12 +4,26 @@
     box-sizing: border-box;
 }
 
+@import "./scss/maps";
+
 @import "./scss/variables";
+
+@import "./scss/mixins";
 
 @import "./scss/body";
 
 @import "./scss/header";
 
 @import "./scss/indexBody";
+
+@import "./scss/extends";
+
+@import "./scss/contactBody";
+
+@import "./scss/productBody";
+
+@import "./scss/galleryBody";
+
+@import "./scss/aboutBody";
 
 @import "./scss/footer";

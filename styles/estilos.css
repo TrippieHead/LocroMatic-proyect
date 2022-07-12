@@ -12,6 +12,21 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.bodyPages {
+  background-image: url(../assets/pagesbackground.png);
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgb(26, 26, 26);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #D6B718;
+  border-radius: 5px;
+}
+
 .header {
   border-bottom: ridge #ffa500;
   background-image: url(../assets/corn.png), linear-gradient(to bottom, #e85d04, #f48c06, #faa307, #ffba08);
@@ -65,10 +80,9 @@ body {
   padding-top: 2rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  margin-bottom: 5rem;
   width: 100%;
   border: outset #ffa500;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
   font-size: 2em;
   letter-spacing: 1.5px;
   text-align: center;
@@ -91,15 +105,17 @@ body {
   width: 80%;
 }
 .mainIndex .indexImg {
+  height: 50rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
-.mainIndex .indexImg .cocinera {
-  -webkit-animation-name: cocinera;
-          animation-name: cocinera;
+.mainIndex .indexImg .locrito {
+  -webkit-animation-name: locrardo;
+          animation-name: locrardo;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -109,7 +125,7 @@ body {
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
-@-webkit-keyframes cocinera {
+@-webkit-keyframes locrardo {
   0% {
     transform: rotate(25deg);
   }
@@ -117,7 +133,7 @@ body {
     transform: rotate(-20deg);
   }
 }
-@keyframes cocinera {
+@keyframes locrardo {
   0% {
     transform: rotate(25deg);
   }
@@ -130,17 +146,268 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   font-style: italic;
   font-weight: bolder;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-@media screen and (max-width: 1215px) {
-  .mainIndex .indexPubli {
-    align-items: center;
+.mainContentContact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainContentContact .mainContentContact__contenido1 h3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: double #000;
+  position: relative;
+  top: 4rem;
+  letter-spacing: 3.5px;
+  background-color: #252422;
+  color: #ffa500;
+}
+.mainContentContact .mainContentContact__contenido1 .mainContentContact__aside {
+  width: 100%;
+}
+.mainContentContact .mainContentContact__contenido1 .mainContentContact__aside p {
+  width: 35rem;
+  border: inset #ffa500;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 2.2px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-top: 5.3rem;
+  background-image: linear-gradient(to right, #e85d04, #f48c06, #faa307, #ffba08);
+  box-shadow: -14px 1px 65px 13px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: -14px 1px 65px 13px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: -14px 1px 65px 13px rgba(0, 0, 0, 0.34);
+}
+.mainContentContact .mainContentContact__contenido1 .mainContentContact__aside .ifr {
+  width: 100%;
+}
+.mainContentContact .mainContentContact__contenido2 form {
+  margin-top: 6rem;
+  border: ridge #ffa500;
+  padding: 15px;
+  line-height: 1.2;
+  font-weight: bolder;
+  font-style: oblique;
+  box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
+}
+.mainContentContact .mainContentContact__contenido2 h3 {
+  display: flex;
+  justify-content: center;
+  border: double black;
+  position: relative;
+  top: 1.5rem;
+  letter-spacing: 5px;
+  background-color: #252422;
+  color: #ffa500;
+}
+
+@media screen and (max-width: 648px) {
+  .mainContentContact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .mainContentContact__contenido1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .mainContentContact__aside {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .mainContentContact__aside p {
+    width: 100%;
+  }
+
+  .mainContentContact__aside .ifr {
+    width: 100%;
+  }
+
+  .mainContentContact__contenido2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .mainContentContact__contenido2 form {
+    width: 100%;
+  }
+
+  .mainContentContact__contenido2 form textarea {
+    width: 100%;
   }
 }
+.productContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.productContainer .mainSectionProduct {
+  width: 100%;
+}
+.productContainer .mainSectionProduct .mainSectionProduct__title {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 5px;
+  width: 100%;
+  text-shadow: 0.5px 0.5px 1px black;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.productContainer .mainSectionProduct .varieties {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  margin: 1rem;
+}
+.productContainer .mainSectionProduct .varieties h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  border: outset 0 #ffa500;
+  border-radius: 40px;
+  padding: 0.6rem;
+  margin: 2rem;
+  width: 15rem;
+  transition: 0.5s;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.productContainer .mainSectionProduct .varieties h4:hover {
+  background-color: #252422;
+  color: #ffa500;
+}
+.productContainer .mainSectionProduct .varieties ol, .productContainer .mainSectionProduct .varieties ul {
+  list-style: none;
+  font-style: oblique;
+  line-height: 2;
+}
+.productContainer .mainSectionProduct .varieties .listaCarne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productContainer .mainSectionProduct .varieties #conCarne {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  gap: 15px;
+}
+.productContainer .mainSectionProduct .varieties #conCarne ul {
+  text-align: center;
+}
+.productContainer .mainSectionProduct .varieties .listaSinCarne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productContainer .mainSectionProduct .varieties #sinCarne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.productContainer .mainSectionProduct .varieties #trigo,
+.productContainer .mainSectionProduct .varieties #maiz,
+.productContainer .mainSectionProduct .varieties #porotos {
+  padding: 2px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+.productContainer .mainSectionProduct2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: ridge #ffa500;
+  padding: 1.5rem;
+  margin: 1rem;
+  gap: 5px;
+}
+.productContainer .mainSectionProduct2 .mainSectionProduct2__title {
+  text-align: center;
+  letter-spacing: 5px;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.mainSectionGallery__title {
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.mainSection .mainContent {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+.mainSection .mainContent .mainContent__contenido {
+  color: #252422;
+  background-color: #ffa500;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0.1vw;
+  border: outset #ffa500;
+  width: 100%;
+  transition: 0.7s;
+  box-shadow: 12px 10px 20px 0px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: 12px 10px 20px 0px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 12px 10px 20px 0px rgba(0, 0, 0, 0.74);
+}
+.mainSection .mainContent .mainContent__contenido:hover {
+  color: #ffa500;
+  background-color: #252422;
+}
+.mainSection .mainContent .mainContent__contenido h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+.mainSection .mainContent .mainContent__img {
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -154,7 +421,7 @@ body {
 }
 .footer .bi-whatsapp {
   font-size: 25px;
-  color: #f48c06;
+  color: #ffa500;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -167,5 +434,4 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   color: #ffa500;
-}
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

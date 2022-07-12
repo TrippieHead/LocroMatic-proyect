@@ -4,18 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PRODUCT</title>
+        <meta name="keywords" content="locro, producto, product, varieties, locrito, comida caliente, maiz, choclo, argentina, sabroso, hot food, corn, tasty">
+        <meta name="description" content="LocroMatic is proud to present its variety of options to eat Locro, you can also find the price of each one here.">
         <link rel="shortcut icon" href="../assets/abuelita icon.png" />
-        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/estilos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <title>LocroMatic Product | Hot Food</title>
     </head>
     <body class="bodyPages">
         <header class="header container-fluid">
-            <div class="row d-flex justify-content-around align-items-start">
+            <div class="row d-flex justify-content-around align-items-start rowHeader">
                 <img src="../assets/LOGO.png" alt="logo de la marca" class="col-auto">
                 <nav class="col nav mt-2">
                     <ul class="header__listaDeNavegacion">
@@ -28,76 +30,77 @@
                 </nav>
             </div>
         </header>
-        <div class="productContainer">
-            <article class="mainSectionProduct">
+        <div class="productContainer container-fluid">
+            <article class="mainSectionProduct row">
                 <h2 class="mainSectionProduct__title">Varieties of Locro</h2>
-                <div class="varieties">    
-                    <h4>With meat:</h4>
-                    <ol id="conCarne">
-                        <li id="trigo">Wheat Locro with meat:</li>
-                        <ul>
-                            <li>Ossobuco</li>
-                            <li>Chorizo</li>
-                            <li>Roast Beef</li>
+                <div class="varieties row">
+                    <div class="col-sm-12 col-md-8 col-lg-8 listaCarne">
+                        <h4>With meat:</h4>
+                        <ol id="conCarne">
+                            <li id="trigo">Wheat Locro with meat:</li>
+                            <ul>
+                                <li>Ossobuco</li>
+                                <li>Chorizo</li>
+                                <li>Roast Beef</li>
+                            </ul>
+                            <li id="maiz">Corn Locro with meat:</li>
+                            <ul>
+                                <li>Red chorizo</li>
+                                <li>Tripe</li>
+                                <li>Chokizuela</li>
+                            </ul>
+                            <li id="porotos">Bean Locro with meat:</li>
+                            <ul>
+                                <li>Tripe</li>
+                                <li>Bacon</li>
+                                <li>Ossobuco</li>
+                            </ul>
+                        </ol>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 listaSinCarne">
+                        <h4>Without meat:</h4>
+                        <ul id="sinCarne">
+                            <li>Wheat Locro</li>
+                            <li>Corn Locro</li>
+                            <li>Bean Locro</li>
+                            <li>Pumpkin Locro</li>
                         </ul>
-                        <li id="maiz">Corn Locro with meat:</li>
-                        <ul>
-                            <li>Red chorizo</li>
-                            <li>Tripe</li>
-                        </ul>
-                        <li id="porotos">Bean Locro with meat:</li>
-                        <ul>
-                            <li>Tripe</li>
-                            <li>Bacon</li>
-                            <li>Ossobuco</li>
-                        </ul>
-                    </ol>
-                    <h4>Without meat:</h4>
-                    <ul id="sinCarne">
-                        <li>Wheat Locro</li>
-                        <li>Corn Locro</li>
-                        <li>Bean Locro</li>
-                        <li>Pumpkin Locro</li>
-                    </ul>
+                    </div>
                 </div>
             </article>
-            <article class="mainSectionProduct2">
+            <article class="mainSectionProduct2 row">
                 <h2 class="mainSectionProduct2__title">Locro's Table</h2>
-                <table border="solid" cellpadding="10px" cellspacing="10px" class="mainSectionProduct2__table">
-                    <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Promotion</th>
-                    </tr>
-                    <tr>
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Add meat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">#</th>
                         <td>Corn Locro</td>
                         <td>$20</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
+                        <td>+ $10</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">#</th>
                         <td>Wheat Locro</td>
                         <td>$15</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
+                        <td>+ $10</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">#</th>
                         <td>Bean Locro</td>
-                        <td>$25</td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>Pumpkin Locro</td>
-                        <td>$18</td>
-                        <td>Yes</td>
-                    </tr>
-                </table>
+                        <td>$20</td>
+                        <td>+ $10</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </article>
-            <div class="productPubli">
-                <aside>Publicidad</aside> 
-                <aside>Publicidad</aside>
-                <aside>Publicidad</aside>
-                <aside>Publicidad</aside>
-                <aside>Publicidad</aside>
-            </div>
         </div>
         <footer class="footer">
             <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
