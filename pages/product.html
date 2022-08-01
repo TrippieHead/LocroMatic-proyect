@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="locro, producto, product, varieties, locrito, comida caliente, maiz, choclo, argentina, sabroso, hot food, corn, tasty">
         <meta name="description" content="LocroMatic is proud to present its variety of options to eat Locro, you can also find the price of each one here.">
-        <link rel="shortcut icon" href="../assets/abuelita icon.png" />
+        <link rel="shortcut icon" href="../assets/abuelitaicon.png" />
         <link rel="stylesheet" href="../styles/estilos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <body class="bodyPages">
         <header class="header container-fluid">
             <div class="row d-flex justify-content-around align-items-start rowHeader">
-                <img src="../assets/LOGO.png" alt="logo de la marca" class="col-auto">
+                <img src="../assets/LOGO.png" alt="brand logo" class="col-auto" title="Logo">
                 <nav class="col nav mt-2">
                     <ul class="header__listaDeNavegacion">
                         <li><a href="../index.html">Home</a></li>
@@ -34,38 +34,59 @@
             <article class="mainSectionProduct row">
                 <h2 class="mainSectionProduct__title">Varieties of Locro</h2>
                 <div class="varieties row">
-                    <div class="col-sm-12 col-md-8 col-lg-8 listaCarne">
-                        <h4>With meat:</h4>
-                        <ol id="conCarne">
-                            <li id="trigo">Wheat Locro with meat:</li>
-                            <ul>
-                                <li>Ossobuco</li>
-                                <li>Chorizo</li>
-                                <li>Roast Beef</li>
-                            </ul>
-                            <li id="maiz">Corn Locro with meat:</li>
-                            <ul>
-                                <li>Red chorizo</li>
-                                <li>Tripe</li>
-                                <li>Chokizuela</li>
-                            </ul>
-                            <li id="porotos">Bean Locro with meat:</li>
-                            <ul>
-                                <li>Tripe</li>
-                                <li>Bacon</li>
-                                <li>Ossobuco</li>
-                            </ul>
-                        </ol>
+                    <div class="card col-sm-12 col-md col-lg cards" style="width: 18rem;">
+                        <img src="https://static.eldiario.es/clip/d25d7b86-20b4-48a2-8d55-f96b54c4b77e_16-9-discover-aspect-ratio_default_0.jpg" class="card-img-top" alt="pot of locro with argentinian flag in the background" title="A very argentinian locro">
+                        <div class="card-body">
+                            <h5 class="card-title">Wheat Locro</h5>
+                            <p class="card-text">     
+                                <ol style="list-style: none;">
+                                    <li>Hot Locrito with:</li>
+                                    <li>Ossobuco</li>
+                                    <li>Chorizo</li>
+                                </ol>
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 listaSinCarne">
-                        <h4>Without meat:</h4>
-                        <ul id="sinCarne">
-                            <li>Wheat Locro</li>
-                            <li>Corn Locro</li>
-                            <li>Bean Locro</li>
-                            <li>Pumpkin Locro</li>
-                        </ul>
+                    <div class="card col-sm-12 col-md col-lg cards" style="width: 18rem;">
+                        <img src="https://www.disfrutarosario.com/wp-content/uploads/2021/05/receta-locro-vegetariano.png" class="card-img-top" alt="pot of locro on a table with cutlery and slices of bread on the side" title="Pot of locro with some vegetables on it">
+                        <div class="card-body">
+                            <h5 class="card-title">Bean Locro</h5>
+                            <p class="card-text">   
+                                <ul style="list-style: none;">
+                                    <li>Hot Locrito with:</li>
+                                    <li>Tripe</li>
+                                    <li>Ossobuco</li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
+                    <div class="card col-sm-12 col-md col-lg cards" style="width: 18rem;">
+                        <img src="https://www.tiemposur.com.ar/uploads/noticia_galeria/2020/05/24/file_81143_main1" class="card-img-top" alt="a big hot pot of locrito with red chorizo on it" title="Hot locrito with red chorizo">
+                        <div class="card-body">
+                          <h5 class="card-title">Corn Locro</h5>
+                          <p class="card-text">
+                            <ul style="list-style: none;">
+                                <li>Hot Locrito with:</li>
+                                <li>Red Chorizo</li>
+                                <li>Choquizuela</li>
+                            </ul>
+                          </p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md col-lg cards" style="width: 18rem;">
+                        <img src="https://resizer.glanacion.com/resizer/tRltS7Z-Kqv_q103aDv2_0IfUYI=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/FYF74VQQ5FF2HBH53E2DCOQU74.jpg" class="card-img-top" alt="a nice pot of vegetarian hot locrito" title="Hot locrito without meat">
+                        <div class="card-body">
+                          <h5 class="card-title">Any Locro</h5>
+                          <p class="card-text">
+                            <ol style="list-style: none;">
+                                <li>Without meat:</li>
+                                <li>Bean</li>
+                                <li>Corn</li>
+                                <li>Wheat</li>
+                            </ol>
+                          </p>
+                        </div>
+                    </div>      
                 </div>
             </article>
             <article class="mainSectionProduct2 row">
@@ -73,7 +94,7 @@
                 <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
+                        <th scope="col"></th>
                         <th scope="col">Product</th>
                         <th scope="col">Price</th>
                         <th scope="col">Add meat</th>
@@ -104,7 +125,7 @@
         </div>
         <footer class="footer">
             <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/locromatic/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.google.com.ar/maps/place/Columbus+Cir,+New+York,+NY,+EE.+UU./@40.767848,-73.9837106,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258f63c9804b5:0xacca5e3d4112d7eb!8m2!3d40.767848!4d-73.9815219" target="_blank"><i class="bi bi-geo-alt-fill"></i></a>
         </footer> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>       

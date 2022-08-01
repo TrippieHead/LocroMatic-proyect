@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("https://img.freepik.com/foto-gratis/hojas-papel-color-naranja_23-2148320424.jpg?w=1060");
+  background-image: url(../assets/background.png);
   background-color: #D6B718;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   color: black;
   font-family: "Bebas Neue", cursive;
-  font-size: 1.2em;
+  font-size: 1.4em;
   transition: 0.6s;
   width: 100%;
   color: #000;
@@ -104,16 +104,17 @@ body::-webkit-scrollbar-thumb {
   padding: 1rem;
   width: 80%;
 }
-.mainIndex .indexImg {
-  height: 50rem;
-  margin-top: 4rem;
+
+.mainIndex2 .indexImg {
+  height: 45rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.mainIndex .indexImg .locrito {
+.mainIndex2 .indexImg .locrito {
   -webkit-animation-name: locrardo;
           animation-name: locrardo;
   -webkit-animation-duration: 5s;
@@ -141,15 +142,11 @@ body::-webkit-scrollbar-thumb {
     transform: rotate(-20deg);
   }
 }
-.mainIndex .indexPubli {
+.mainIndex2 .indexPubli {
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-style: italic;
-  font-weight: bolder;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .mainContentContact {
@@ -158,6 +155,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 15px;
 }
 .mainContentContact .mainContentContact__contenido1 h3 {
   width: 100%;
@@ -169,6 +167,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 3.5px;
   background-color: #252422;
   color: #ffa500;
+  font-style: oblique;
 }
 .mainContentContact .mainContentContact__contenido1 .mainContentContact__aside {
   width: 100%;
@@ -192,19 +191,22 @@ body::-webkit-scrollbar-thumb {
 }
 .mainContentContact .mainContentContact__contenido1 .mainContentContact__aside .ifr {
   width: 100%;
+  margin-top: 1rem;
 }
-.mainContentContact .mainContentContact__contenido2 form {
-  margin-top: 6rem;
-  border: ridge #ffa500;
-  padding: 15px;
+.mainContentContact .mainContentContact__form {
+  padding: 20px;
   line-height: 1.2;
-  font-weight: bolder;
   font-style: oblique;
+  border: solid #ffa500;
   box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 30px -5px rgba(0, 0, 0, 0.75);
 }
-.mainContentContact .mainContentContact__contenido2 h3 {
+.mainContentContact .mainContentContact__form form .formSelection {
+  display: flex;
+  flex-direction: column;
+}
+.mainContentContact .mainContentContact__form h3 {
   display: flex;
   justify-content: center;
   border: double black;
@@ -215,6 +217,14 @@ body::-webkit-scrollbar-thumb {
   color: #ffa500;
 }
 
+@media screen and (max-width: 445px) {
+  .mainContentContact__form .terms div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+}
 @media screen and (max-width: 648px) {
   .mainContentContact {
     width: 100%;
@@ -222,7 +232,6 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     flex-direction: column;
   }
-
   .mainContentContact__contenido1 {
     display: flex;
     flex-direction: column;
@@ -230,34 +239,24 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     font-size: 0.8rem;
   }
-
   .mainContentContact__aside {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-
   .mainContentContact__aside p {
     width: 100%;
   }
-
   .mainContentContact__aside .ifr {
     width: 100%;
   }
-
-  .mainContentContact__contenido2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
+  .mainContentContact__form {
+    font-size: 0.9rem;
   }
-
-  .mainContentContact__contenido2 form {
-    width: 100%;
-  }
-
-  .mainContentContact__contenido2 form textarea {
-    width: 100%;
+}
+@media screen and (max-width: 1041px) {
+  .mainContentContact__form {
+    margin-top: 2rem;
   }
 }
 .productContainer {
@@ -272,6 +271,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   letter-spacing: 5px;
+  text-align: center;
   width: 100%;
   text-shadow: 0.5px 0.5px 1px black;
   margin-top: 3rem;
@@ -279,76 +279,31 @@ body::-webkit-scrollbar-thumb {
 }
 .productContainer .mainSectionProduct .varieties {
   display: flex;
+  justify-content: center;
   width: 100%;
-  flex-wrap: wrap;
-  padding-left: 2rem;
   margin: 1rem;
+  gap: 20px;
 }
-.productContainer .mainSectionProduct .varieties h4 {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  border: outset 0 #ffa500;
-  border-radius: 40px;
-  padding: 0.6rem;
-  margin: 2rem;
-  width: 15rem;
-  transition: 0.5s;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-.productContainer .mainSectionProduct .varieties h4:hover {
-  background-color: #252422;
+.productContainer .mainSectionProduct .varieties .cards {
+  background-color: #000;
   color: #ffa500;
+  padding: 10px;
 }
-.productContainer .mainSectionProduct .varieties ol, .productContainer .mainSectionProduct .varieties ul {
-  list-style: none;
-  font-style: oblique;
-  line-height: 2;
-}
-.productContainer .mainSectionProduct .varieties .listaCarne {
+.productContainer .mainSectionProduct .varieties .cards .card-body {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-}
-.productContainer .mainSectionProduct .varieties #conCarne {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  gap: 15px;
-}
-.productContainer .mainSectionProduct .varieties #conCarne ul {
   text-align: center;
+  line-height: 1.8;
 }
-.productContainer .mainSectionProduct .varieties .listaSinCarne {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.productContainer .mainSectionProduct .varieties #sinCarne {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-.productContainer .mainSectionProduct .varieties #trigo,
-.productContainer .mainSectionProduct .varieties #maiz,
-.productContainer .mainSectionProduct .varieties #porotos {
-  padding: 2px;
-  text-transform: capitalize;
-  font-weight: bolder;
-  display: flex;
-  align-items: center;
+.productContainer .mainSectionProduct .varieties .cards .card-body .card-title {
+  text-align: center;
+  font-style: italic;
 }
 .productContainer .mainSectionProduct2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: ridge #ffa500;
   padding: 1.5rem;
   margin: 1rem;
   gap: 5px;
@@ -362,6 +317,11 @@ body::-webkit-scrollbar-thumb {
   text-shadow: 0.5px 0.5px 1px black;
 }
 
+@media screen and (max-width: 865px) {
+  .card-body {
+    flex-direction: column;
+  }
+}
 .mainSectionGallery__title {
   letter-spacing: 5px;
   display: flex;
@@ -400,9 +360,8 @@ body::-webkit-scrollbar-thumb {
   padding-top: 10px;
 }
 .mainSection .mainContent .mainContent__img {
-  padding: 1rem;
+  padding-top: 4rem;
   width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   overflow: hidden;

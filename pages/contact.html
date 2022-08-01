@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="formulario, central park, form, columbia circle, location, locro, locrito, comida caliente, maiz, choclo, argentina, sabroso, hot food, corn, tasty">
         <meta name="description" content="LocroMatic contact page is used to ubicate our location, in addition to the possibility of feedback through a form.">
-        <link rel="shortcut icon" href="../assets/abuelita icon.png" />
+        <link rel="shortcut icon" href="../assets/abuelitaicon.png">
         <link rel="stylesheet" href="../styles/estilos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <body class="bodyPages">
         <header class="header container-fluid">
             <div class="row d-flex justify-content-around align-items-start rowHeader">
-                <img src="../assets/LOGO.png" alt="logo de la marca" class="col-auto">
+                <img src="../assets/LOGO.png" alt="brand logo" class="col-auto" title="Logo">
                 <nav class="col nav mt-2">
                     <ul class="header__listaDeNavegacion">
                         <li><a href="../index.html">Home</a></li>
@@ -41,88 +41,49 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.7352219709733!2d-73.98152189999999!3d40.767848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f63c9804b5%3A0xacca5e3d4112d7eb!2sColumbus%20Cir%2C%20New%20York%2C%20NY%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1657315972974!5m2!1ses-419!2sar" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ifr"></iframe>
                 </aside>
             </div>
-            <div class="mainContentContact__contenido2">    
+            <div class="mainContentContact__form">
                 <form>
-                    <label for="name">
-                        Your name:
-                    </label>
-                    <input type="text" id="name" />               
-                    <hr />
-                    <br />
-                    <label for="email">
-                        Your email:
-                    </label>
-                    <input type="text" id="email">
-                    <hr />
-                    <br />
-                    <label for="phone">
-                        Phone number:
-                    </label>
-                    <input type="text" id="phone" />
-                    <hr />
-                    <br />
-                    <span>Where are you from?</span>
-                    <br />
-                    <select>
-                        <option selected="selected">Select your location</option>
-                        <option>Brooklyn</option>
-                        <option>Bronx</option>
-                        <option>Long Island</option>
-                        <option>Manhattan</option>
-                        <option>Queens</option>
-                        <option>Staten Island</option>
-                    </select>
-                    <hr />
-                    <label>
-                        Have you ever tried LOCRO before?
-                    </label>
-                    <br />
-                    <br />
-                    <span>Yes</span>
-                    <input type="radio" name="option" />
-                    <span>No</span>
-                    <input type="radio" name="option">
-                    <hr />
-                    <label>
-                        Do you know where LOCRO is from?
-                    </label>
-                    <br />
-                    <br />
-                    <span>Brazil</span>
-                    <input type="radio" name="option2">
-                    <span>Argentina</span>
-                    <input type="radio" name="option2">
-                    <span>Colombia</span>
-                    <input type="radio" name="option2">
-                    <span>Italy</span>
-                    <input type="radio" name="option2">
-                    <hr />
-                    <label>
-                        Do you want to receive more information about it?
-                    </label>
-                    <br />
-                    <br />
-                    <span>Yes</span>
-                    <input type="checkbox" checked="checked" />
-                    <span>I accept the terms and conditions</span>
-                    <input type="checkbox" />
-                    <hr />
-                    <label for="comment">
-                        Any extra comment
-                    </label>
-                    <br />
-                    <br />
-                    <textarea id="comment" rows="10" cols="50"></textarea>
-                    <br />
-                    <input type="submit" value="Send"/>
-                    <input type="reset" value="Reset"/>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Phone number</label>
+                        <input type="phone" class="form-control" id="exampleFormControlInput2" placeholder="383-4316844">
+                    </div>
+                    <div class="formSelection">
+                        <span class="mb-2">Where are you from?</span>
+                        <select class="mb-3">
+                            <option selected="selected">Select your location</option>
+                            <option>Brooklyn</option>
+                            <option>Bronx</option>
+                            <option>Long Island</option>
+                            <option>Manhattan</option>
+                            <option>Queens</option>
+                        </select>
+                    </div>
+                    <div class="mb-4 mt-2 terms">
+                        <div>
+                            <label>Do you accept to receive more information?</label>
+                            <span>Yes</span>
+                            <input type="checkbox" checked="checked">
+                            <span>No</span>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Any extra comments</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-light">
+                    <input type="reset" value="Reset" class="btn btn-light">
                 </form>
-                <h3>Form</h3>
+                <h3 class="mb-4 mt-3">Form</h3>
             </div>
         </main>
         <footer class="footer">
             <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/locromatic/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.google.com.ar/maps/place/Columbus+Cir,+New+York,+NY,+EE.+UU./@40.767848,-73.9837106,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258f63c9804b5:0xacca5e3d4112d7eb!8m2!3d40.767848!4d-73.9815219" target="_blank"><i class="bi bi-geo-alt-fill"></i></a>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>     

@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 15px;
 
     .mainContentContact__contenido1 {
         
@@ -17,6 +18,7 @@
             letter-spacing: 3.5px;
             background-color: #252422;
             color: $naranjita;
+            font-style: oblique;
         }
 
         .mainContentContact__aside {
@@ -42,23 +44,26 @@
 
             .ifr {
                 width: 100%;
+                margin-top: 1rem;
             }
         }
     }
 
-    .mainContentContact__contenido2 {
+    .mainContentContact__form {
+        padding: 20px;
+        line-height: 1.2;
+        font-style: oblique;
+        border: solid $naranjita;
+        box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
 
         form {
-            margin-top: 6rem;
-            border: ridge $naranjita;
-            padding: 15px;
-            line-height: 1.2;
-            font-weight: bolder;
-            font-style: oblique;
-            box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
-            -moz-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
 
+            .formSelection {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         h3 {
@@ -74,7 +79,17 @@
     }
 }
 
-// Media querie de pagina contact
+// Media queries de pagina contact
+
+@media screen and (max-width: 445px)  {
+    .mainContentContact__form .terms div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
 
 @media screen and (max-width: 648px)  {
     .mainContentContact {
@@ -106,18 +121,14 @@
         width: 100%;
     }
 
-    .mainContentContact__contenido2 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
+    .mainContentContact__form {
+        font-size: 0.9rem;
     }
+}
 
-    .mainContentContact__contenido2 form {
-        width: 100%;
-    }
 
-    .mainContentContact__contenido2 form textarea {
-        width: 100%;
+@media screen and (max-width: 1041px)  {
+    .mainContentContact__form {
+        margin-top: 2rem;
     }
 }

@@ -32,9 +32,12 @@
             width: 80%;
         }
     }
+}
+
+.mainIndex2 {
 
     .indexImg {
-        @include sizes (50rem, 4rem, 1rem);
+        @include sizes (45rem, 1rem, 1rem);
         display: flex;
         justify-content: center;
         align-items: center;
