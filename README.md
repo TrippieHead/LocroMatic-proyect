@@ -1,0 +1,5 @@
+# LocroMatic-Proyect
+El siguiente sitio web tiene como objeto publicitar y dar a conocer un nuevo proyecto gastronomico ubicado en la ciudad de Nueva York, Estados Unidos. Esta iniciativa nace luego de una prolongada estadia en la ciudad y ante la vista de una oportunidad, introducir algo nativo de mi pais (Argentina) al mercado de Norteamerica, el Locro. Considerando que no hay nada parecido a este plato y la excelente relacion que tiene con el frio del duro invierno que pasan alli, resolvimos intentar llevar esta increible receta con mi abuela como cocinera del mismo, ya que es ella la que sin duda hace el mejor Locro que hayan probado alguna vez.
+
+## Sobre mi
+Mi nombre es Facundo Herrera y soy un estudiante de CoderHouse en la carrera de Desarrollador Full Stack, actualmente poseo conocimientos de desarrollo Frontend tales como html, css, scss y distintos frameworks como Bootstrap. Mi objetivo es seguir instruyendome con todas las herramientas necesarias para poder desenvolverme efectivamente en el mundo de la programacion.  
